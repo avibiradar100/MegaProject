@@ -1,2 +1,1 @@
-# MegaProject
-Real-time Clothing Size Estimation Using Body Segmentation
+# Real-time Clothing Size Estimation Using Body Segmentation
