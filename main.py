@@ -1,6 +1,7 @@
 import pywavefront
 import numpy as np
 import os
+import streamlit as st
 
 from body_measurements.measurement import Body3D
 
@@ -9,10 +10,10 @@ data_dir = os.path.join(current_dir, 'data')
 
 def main():
     
-    print(1)
-    f = open("data/person.obj", "r")
-    f.read()
-    
+    st.title("Real Time Body size measurement")
+    picture = st.camera_input("Take a picture",help="Hello")
+    if picture:
+        st.sidebar.image(picture)
     person = pywavefront.Wavefront(
         os.path.join(data_dir, 'person.obj'),
         create_materials=True,
