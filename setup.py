@@ -21,6 +21,6 @@ setup(
     "numpy>=1.19.1",
     "scipy>=1.5.2",
     "shapely>=1.7.1",
-    "networkx>=2.5"
+    "networkx>=2.5",
   ]
 )
