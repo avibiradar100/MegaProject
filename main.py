@@ -12,6 +12,8 @@ data_dir = os.path.join(current_dir, 'data')
 def main():
     
     st.title("Real Time Body size measurement")
+
+    st.camera_input(label="Click photo")
     
     person = pywavefront.Wavefront(
         os.path.join(data_dir, 'person.obj'),
